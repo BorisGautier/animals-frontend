@@ -1,0 +1,15 @@
+{
+  "name": "accessible",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ol": "7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "vite": "^3.0.3"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  }
+}
