@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Animal</title>
     <link rel="stylesheet" href="node_modules/ol/ol.css">
@@ -9,11 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:400,500,700&amp;display=swap'>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
-    
-    
-  </head>
-  <body>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
     <div class="super_container_wh">
         <div class="super_inner_container_wh">
             <div class="page_container_wh shadow_effect7">
@@ -35,31 +38,67 @@
                 </div>
                 <div class="animal_description_wh m_t_30">
                     <p id="description">
-                    Hi, my name is Lola ! <br/><br/>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ut quidem molestias, et molestiae optio sit eveniet eligendi, fugit harum adipisci, tempora eos facere officia impedit? Recusandae iste voluptates consectetur.
-                    <br/><br/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odit totam fugit accusamus alias consequatur ducimus ullam voluptate repellat, maiores quam. Maiores quis dignissimos minima impedit rerum delectus dicta quaerat.
+                        Hi, my name is Lola ! <br /><br />
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ut quidem molestias, et molestiae
+                        optio sit eveniet eligendi, fugit harum adipisci, tempora eos facere officia impedit? Recusandae
+                        iste voluptates consectetur.
+                        <br /><br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odit totam fugit accusamus alias
+                        consequatur ducimus ullam voluptate repellat, maiores quam. Maiores quis dignissimos minima
+                        impedit rerum delectus dicta quaerat.
                     </p>
+                </div>
+                <div class="animal_side_infos_wh_mobile shadow_effect1">
+                    <div class="mini_section_wh">
+                        <h3 class="title_wh">Classification :</h3>
+                        <ul>
+                            <li>
+                                <strong>Classe :</strong>&nbsp;&nbsp;
+                                <span id="class">Reptilia</span>
+                            </li>
+                            <li>
+                                <strong>Order :</strong>&nbsp;&nbsp;
+                                <span id="order">Lorem ipsum</span>
+                            </li>
+                            <li>
+                                <strong>Family :</strong>&nbsp;&nbsp;
+                                <span id="family">Voluptates omnis</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mini_section_wh m_t_20">
+                        <h3 class="title_wh">Diet :</h3>
+                        <div class="img_icon_text_wh">
+                            <span class="icon_wh">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </span>
+                            <span id="diet">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="animal_more_infos_paragraph_wh m_t_30">
                     <div class="icon_title_wh">
                         <span class="icon_wh"><i class="fa fa-globe-africa"></i></span>
                         <h2 class="title_wh">Her habitat :</h2>
                     </div>
-                    <p id="habitat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maxime nulla laboriosam dolor dignissimos natus, neque, sint explicabo quo iure labore assumenda omnis totam repudiandae architecto. Consequatur quis provident suscipit.</p>
+                    <p id="habitat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maxime nulla
+                        laboriosam dolor dignissimos natus, neque, sint explicabo quo iure labore assumenda omnis totam
+                        repudiandae architecto. Consequatur quis provident suscipit.</p>
                 </div>
                 <div class="animal_more_infos_paragraph_wh m_t_30">
                     <div class="icon_title_wh">
                         <span class="icon_wh"><i class="fa fa-exclamation-triangle"></i></span>
                         <h2 class="title_wh">How is she threatened ?</h2>
                     </div>
-                    <p id="menaces">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maxime nulla laboriosam dolor dignissimos natus, neque, sint explicabo quo iure labore assumenda omnis totam repudiandae architecto. Consequatur quis provident suscipit.</p>
-               
-    <div id="map" class="map" tabindex="0"></div>
-     <div id="popup" class="ol-popup">
-        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-        <div id="popup-content"></div>
-      </div>
+                    <p id="menaces">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, maxime nulla
+                        laboriosam dolor dignissimos natus, neque, sint explicabo quo iure labore assumenda omnis totam
+                        repudiandae architecto. Consequatur quis provident suscipit.</p>
+
+                    <div id="map" class="map" tabindex="0"></div>
+                    <div id="popup" class="ol-popup">
+                        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                        <div id="popup-content"></div>
+                    </div>
                 </div>
 
                 <div class="animal_picture_wh shadow_effect7">
@@ -76,7 +115,9 @@
                         <i class="far fa-lightbulb"></i>
                     </span>
                     <h3 class="title_wh">FUN FACT</h3>
-                    <p id="funfact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis asperiores maxime quaerat, maiores adipisci veniam, impedit officia ex quos nostrum itaque vel tenetur incidunt. Nam ipsam ducimus adipisci pariatur.</p>
+                    <p id="funfact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis asperiores
+                        maxime quaerat, maiores adipisci veniam, impedit officia ex quos nostrum itaque vel tenetur
+                        incidunt. Nam ipsam ducimus adipisci pariatur.</p>
                 </div>
 
                 <div class="animal_side_infos_wh shadow_effect1">
@@ -141,9 +182,10 @@
         </div>
     </div>
 
-   
+
     <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
     <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
     <script type="module" src="index.js"></script>
-  </body>
+</body>
+
 </html>
