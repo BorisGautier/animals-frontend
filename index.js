@@ -1,5 +1,4 @@
 import Map from 'ol/Map';
-import OSM from 'ol/source/OSM';
 import XYZ from 'ol/source/XYZ';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
@@ -42,11 +41,11 @@ const urlParams = new URLSearchParams(queryString);
 
 const id = urlParams.get('id')
 
-
+const backend_url = "http://tracking.forearthver.com/";
 
 // api url
 const api_url =
-    "http://animaladmin.position.cm/api/animals/" + id;
+    backend_url + "api/animals/" + id;
 
 // Defining async function
 
@@ -71,7 +70,7 @@ for (let index = 0; index < data.data.animal.trackings.length; index++) {
     let layer = new VectorLayer({
         style: new Style({
             image: new Icon({
-                src: 'http://animaladmin.position.cm/storage/' + data.data.animal.medias[0].media_url,
+                src: backend_url + 'storage/' + data.data.animal.medias[0].media_url,
                 scale: 0.07,
             }),
         }),
@@ -127,7 +126,7 @@ let dataRoute = await route.json();
 let layer = new VectorLayer({
     style: new Style({
         image: new Icon({
-            src: 'http://animaladmin.position.cm/storage/' + data.data.animal.medias[0].media_url,
+            src: backend_url + 'storage/' + data.data.animal.medias[0].media_url,
             scale: 0.07,
         }),
     }),
@@ -162,11 +161,12 @@ const routeFeature = new Feature({
     geometry: routeLine,
 });
 
+
 const styles = {
     'route': new Style({
         stroke: new Stroke({
             width: 3,
-            color: [0, 191, 255, 0.8],
+            color: data.data.animal.couleur,
         }),
     }),
 
@@ -207,8 +207,8 @@ document.getElementById("family").innerHTML = data.data.animal.family;
 document.getElementById("diet").innerHTML = data.data.animal.diet;
 
 const img = document.querySelectorAll("img");
-img[1].src = "http://animaladmin.position.cm/storage/" + data.data.animal.medias[0].media_url;
-img[0].src = "http://animaladmin.position.cm/storage/" + data.data.animal.medias[0].media_url;
+img[1].src = backend_url + "storage/" + data.data.animal.medias[0].media_url;
+img[0].src = backend_url + "storage/" + data.data.animal.cover_url;
 
 map.on('click', function (evt) {
     map.forEachFeatureAtPixel(evt.pixel, function (layer) {
