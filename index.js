@@ -41,7 +41,7 @@ const urlParams = new URLSearchParams(queryString);
 
 const id = urlParams.get('id')
 
-const backend_url = "http://tracking.forearthver.com/";
+const backend_url = "http://tracking.forearthver.com/public/";
 
 // api url
 const api_url =
